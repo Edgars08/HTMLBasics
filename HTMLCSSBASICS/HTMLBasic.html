@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML-BASICS</title>
 </head>
+
 <body>
- <h1>HTML</h1>
-        <h3>An Ordered List:</h3>
+    <h1>HTML</h1>
+    <h3>An Ordered List:</h3>
     <ol>
         <li>Student</li>
         <li>Lectures</li>
@@ -15,29 +17,29 @@
         <li>Exams</li>
     </ol>
     <h3>An Unordered List:</h3>
-    
+
     <ul>
         <li>Student</li>
         <li>Lectures</li>
         <li>Labs</li>
         <li>Exams</li>
     </ul>
-        <h3>IMAGES</h3>
-        <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="200" height="200">
+    <h3>IMAGES</h3>
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="200" height="200">
 
-        <h3>Links</h3>
+    <h3>Links</h3>
     <a href="https://github.com/Edgars08"> Edgar Github Profile</a>
- 
-        <h3>Tables</h3>
-        <table>
-            <tr>
+
+    <h3>Tables</h3>
+    <table>
+        <tr>
             <thead>
                 <th>Name</th>
                 <th>Age</th>
                 <th>Surname</th>
             </thead>
-            </tr>
-            <tbody>
+        </tr>
+        <tbody>
             <tr>
                 <td>Edgar</td>
                 <td>20</td>
@@ -48,7 +50,36 @@
                 <td>28</td>
                 <td>Smith</td>
             </tr>
-            </tbody>
-        </table>
+        </tbody>
+    </table>
+    <h3>Forms</h3>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Your name"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Your surname"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" placeholder="Password"><br><br>
+        <label>
+            <input type="radio" name="color" value="Green">
+            Green
+        </label>
+        <label>
+            <input type="radio" name="color" value="Blue">
+            Blue
+        </label>
+        <label>
+            <input type="radio" name="color" value="Black">
+            Black
+        </label><br><br>
+        <input list="Provinces" name="Province" placeholder="Province">
+        <datalist id="Provinces">
+            <option value="Limpopo"></option>
+            <option value="Gauteng"></option>
+            <option value="Mpumalanga"></option>
+        </datalist>
+        <input type="submit" value="Submit">
+    </form>
 </body>
+
 </html>
